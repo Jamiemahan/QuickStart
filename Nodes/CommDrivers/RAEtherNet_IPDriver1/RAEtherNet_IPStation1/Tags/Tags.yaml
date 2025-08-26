@@ -1,0 +1,8 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: Controller_Tags/Controller_Tags.yaml
+- File: Program_FaultReporting/Program_FaultReporting.yaml
+- File: Program_Main_Program/Program_Main_Program.yaml
+- File: Program_SafetyProgram/Program_SafetyProgram.yaml
+- File: Program_Sta_1/Program_Sta_1.yaml

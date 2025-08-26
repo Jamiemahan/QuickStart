@@ -1,0 +1,19 @@
+Name: 'Program:SafetyProgram'
+Type: FolderType
+Children:
+- Name: LC_Reset
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:SafetyProgram.LC_Reset"
+- Name: LC_Reset_Sfty
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:SafetyProgram.LC_Reset_Sfty"

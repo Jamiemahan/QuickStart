@@ -1,0 +1,145 @@
+Name: 'Program:Main_Program'
+Type: FolderType
+Children:
+- Name: Actual_Hour
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Main_Program.Actual_Hour"
+- Name: DryCycleTggl
+  Type: Tggl
+  DataType: Tggl
+  Children:
+  - Name: Req
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.DryCycleTggl.Req"
+  - Name: OS
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.DryCycleTggl.OS"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.DryCycleTggl.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Main_Program.DryCycleTggl.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.DryCycleTggl.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Main_Program.DryCycleTggl.EnableOut.@Description"
+  - Name: PB
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.DryCycleTggl.PB"
+- Name: LightCurtainReset_STD
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Main_Program.LightCurtainReset_STD"
+- Name: Out_Relay_Fan
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:Main_Program.Out_Relay_Fan"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Operator Fan"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.Out_Relay_Fan.@Description"
+- Name: Weldgun1_LVDT
+  Type: BMC_AOI_PROC_BTLC12NL
+  DataType: BMC_AOI_PROC_BTLC12NL
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "BTL PF1400-1250-C12NL3A0-000S04"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.Weldgun1_LVDT.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.Weldgun1_LVDT.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Main_Program.Weldgun1_LVDT.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Main_Program.Weldgun1_LVDT.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Main_Program.Weldgun1_LVDT.EnableOut.@Description"

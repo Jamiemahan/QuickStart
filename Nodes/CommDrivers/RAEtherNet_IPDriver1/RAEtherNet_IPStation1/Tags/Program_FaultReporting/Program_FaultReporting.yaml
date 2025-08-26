@@ -1,0 +1,158 @@
+Name: 'Program:FaultReporting'
+Type: FolderType
+Children:
+- Name: INT_DsplyDrtnTmr
+  Type: TIMER
+  DataType: TIMER
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Display Duration Timer"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.INT_DsplyDrtnTmr.@Description"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.INT_DsplyDrtnTmr.PRE"
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.INT_DsplyDrtnTmr.ACC"
+  - Name: EN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.INT_DsplyDrtnTmr.EN"
+  - Name: TT
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.INT_DsplyDrtnTmr.TT"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.INT_DsplyDrtnTmr.DN"
+- Name: STS_CrrntBtMntrdIndx
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:FaultReporting.STS_CrrntBtMntrdIndx"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Current Register Bit Index Being Monitored"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.STS_CrrntBtMntrdIndx.@Description"
+- Name: STS_CrrntRgstrMntrdIndx
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:FaultReporting.STS_CrrntRgstrMntrdIndx"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Current Register Index Being Monitored"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.STS_CrrntRgstrMntrdIndx.@Description"
+- Name: STS_DsplyDrtnScnds
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:FaultReporting.STS_DsplyDrtnScnds"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Display Duration for Messages in Seconds"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.STS_DsplyDrtnScnds.@Description"
+- Name: STS_NxtAlrmFrDsplyFnd
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:FaultReporting.STS_NxtAlrmFrDsplyFnd"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Next Alarm to Be Displayed is Found"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.STS_NxtAlrmFrDsplyFnd.@Description"
+- Name: STS_QtyRgstrsChckdWOFlt
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:FaultReporting.STS_QtyRgstrsChckdWOFlt"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Quantity of Registers Checked Without Finding a Fault"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.STS_QtyRgstrsChckdWOFlt.@Description"
+- Name: STS_QtyRgstrsToMntr
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:FaultReporting.STS_QtyRgstrsToMntr"
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Quantity of Registers in Array to Monitor for Alarms and Events"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:FaultReporting.STS_QtyRgstrsToMntr.@Description"

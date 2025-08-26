@@ -1,0 +1,195 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- Name: DigitalAlarm1
+  Id: g=716dcdccaa656e2dfeac0beb5f6c5f44
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=0d16da4a826f24d4fcbfa0fc6d0d9ac0
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6a35554e87c10a512afeef0a38750cd6
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=391b53577a2adb40e91b1c42ac28b3d6
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Motor1Alarm"
+      Children:
+      - Name: Mode
+        Id: g=45cd497261e711c71a5e3285b16ab5b9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=55463470c4c8c7cf44c5aac7affbfe72
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=a68e194396a99c5dab0e874bd7a056b1
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Motor 1 Alarm"}
+  - Name: LatchingEnabled
+    Id: g=562b7a0fd4387f32c085d77fb0b1316b
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=b44658a10a7754a654e72e6998df48d3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Severity
+    Id: g=a2e7e91717595bb07702ec5753807d77
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1000
+- Name: AnalogAlarm
+  Id: g=662dec1beb93d1937a4ace0ed7869e4c
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=45747f357a5230512e707ca44280987e
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=187a897cfeb1fcdbe3d99c7d0ac01903
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Temperature"
+      Children:
+      - Name: Mode
+        Id: g=39e8e0100ed5e9b5428e1eb1018629bc
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=16b1824698fc62b40f6e8fcc2b4d71a1
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
+  - Name: HighHighLimit
+    Id: g=6476f30084361a3dcc19cf22dca44f6b
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: "NaN"
+  - Name: HighLimit
+    Id: g=2fa37ed52c06543be1a53ce0f9c2036e
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
+  - Name: LowLimit
+    Id: g=e0372b7a3645fbb82dfa5aeb19fa2a4d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 32.0
+  - Name: AutoConfirm
+    Id: g=33049cf7ac66ad611da8d92b3f023308
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Message
+    Id: g=9ce6c645511f38b1b8dee227c7a727fd
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=86158b91c005689a387d60c4343a7002
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Temperature Is High"}
+    - Name: LowStateMessage
+      Id: g=2ba7cc1339b2b86a85f7768d2fe83eda
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Temperature Is Low"}
+  - Name: LowLowLimit
+    Id: g=05d712d19e640460a02df48479c4eeff
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: "NaN"
+  - Name: Enabled
+    Id: g=6ea034eb6ff113fec6c88c98475339a0
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Severity
+    Id: g=39397f36040e4504c12f346c3422ff12
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1000
