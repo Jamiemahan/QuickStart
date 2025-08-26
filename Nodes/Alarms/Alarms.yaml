@@ -84,6 +84,21 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 1000
+  - Name: Shelved
+    Id: g=7c7bf83361a3d9a0a47a444b94f2753f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Suppressed
+    Id: g=c4492f26e7cecc86842923dfe4824736
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Enabled
+    Id: g=b69824b47a3020e2ccb2a774a4a4f135
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
 - Name: AnalogAlarm
   Id: g=662dec1beb93d1937a4ace0ed7869e4c
   Type: ExclusiveLevelAlarmController

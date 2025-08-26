@@ -110,7 +110,7 @@ Children:
 - Name: StandardFontSize
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 20
+  Value: 12
 - Name: 'E-Stop_IND'
   Type: BaseDataVariableType
   DataType: Int32
@@ -118,5 +118,27 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - Name: Robot_IND
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Current_Display_Number
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Side_IND
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: A_Cycle_IND
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: B_Cycle_IND
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: LightScreen_IND
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Fault_IND
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1
+- Name: ControlPower_IND
   Type: BaseDataVariableType
   DataType: Int32
